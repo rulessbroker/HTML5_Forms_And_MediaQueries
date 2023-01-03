@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form Input Types</title>
+    <link rel="stylesheet" href="Input_Form.css" />
+    <script defer src="Logic.js"></script>
+  </head>
+  <body>
+    <form>
+      <header class="headerContainer"><h1>Personal Details</h1></header>
+      <div>
+        <label for="text"> Name : </label>
+        <input type="text" id="text" name="text" />
+        <error-output class="text-error" for="text"></error-output>
+      </div>
+      <div>
+        <button onclick="input()">submit</button>
+      </div>
+    </form>
+  </body>
+</html>
