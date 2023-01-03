@@ -16,3 +16,11 @@ const text = document.querySelector("#text");
           else emailError.textContent = "Email is Incorrect";
       });
   
+      const number = document.querySelector('#number');
+        const numberError = document.querySelector('.number-error');
+        number.addEventListener('input', function input(){
+            let numberRegex = RegExp('^[6-9]{1}[0-9]{1}[1-9]{8}$');
+            if(numberRegex.test(number.value)) 
+            numberError.textContent = " ";
+            else numberError.textContent = "number is Incorrect";
+        });
